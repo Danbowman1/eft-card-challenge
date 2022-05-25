@@ -1,0 +1,156 @@
+:root {
+    --primarySoft: hsl(215, 51%, 70%);
+    --primaryCyan: hsl(178, 100%, 50%);
+    --mainBg: hsl(217, 54%, 11%);
+    --cardBg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--mainBg);
+}
+
+p, a {
+    font-family: 'Outfit', sans-serif;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.card {
+    width: 280px;
+    padding: 1.25rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: var(--cardBg);
+    border-radius: .6rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+img {
+    width: 100%;
+    position: relative;
+
+    border-radius: .5rem;
+    background: none;
+    
+}
+
+.img-overlay {
+    width: 280px;
+    height: 280px;
+    display: flex;
+    background-color: var(--primaryCyan);
+    border-radius: .6rem;
+    position: absolute;
+    top: 1.3rem;
+    opacity: 0;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.img-overlay:hover {
+    opacity: .75;
+}
+
+.eye {
+    width: 50px;
+    margin: auto;
+}
+
+
+.card-body {
+    margin: 0 auto;
+}
+
+.card-title {
+    margin: 20px 0 10px 0 ;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.card-text {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--primarySoft);
+}
+
+.icon-1 img {
+    width: 10px;
+    height: 16px;
+    margin-right: 6px;
+}
+.icon-2 img {
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+}
+
+.icon-1 p, .icon-2 p {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.icon-1 p {
+    color: var(--primaryCyan);
+}
+
+.icon-2 p {
+    color: var(--primarySoft);
+}
+
+hr {
+    width: 250px;
+    height: 1px;
+    border: none;
+    background-color: var(--line);
+}
+
+.avatar {
+    align-self: start;
+}
+
+.avatar img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+.avatar p {
+    color: var(--primarySoft);
+    font-size: 14px;
+}
+
+.avatar a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+}
+
+.avatar a:hover, .card-title:hover {
+    color: var(--primaryCyan);
+}
